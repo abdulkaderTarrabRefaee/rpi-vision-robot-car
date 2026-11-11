@@ -56,6 +56,7 @@ controller/                  runs on the PC
   face_steering.py           steer by face position
   hand_steering.py           steer by fist position
   ball_tracking.py           HSV ball tracking prototype
+  stream_hand_steering/      hand steering applied to the frames received from the Pi camera (Jul 2017)
 ```
 
 The two steering scripts expect `face.xml` and `fist.xml` next to them. Use `haarcascade_frontalface_default.xml` from OpenCV for the first; the fist cascade is a third-party file and is not redistributed here.
@@ -64,7 +65,7 @@ The two steering scripts expect `face.xml` and `fist.xml` next to them. Use `haa
 
 Parts of this project were adapted from tutorials and open-source code, as student projects are:
 
-- The UDP video transport in `robot/camera_stream.py` and the receiving thread in `controller/dashboard.py` are based on the open-source `udp-camera-stream` example (its original Polish comments are still in the code). I added the pygame display, the command channel and the detection modes around it.
+- The UDP video transport in `robot/camera_stream.py` and the receiving code in `controller/dashboard.py` and `controller/stream_hand_steering/` are based on the open-source `udp-camera-stream` example (its original Polish comments are still in the code). I added the pygame display, the command channel and the detection modes around it.
 - `controller/ball_tracking.py` follows a public OpenCV colour-tracking tutorial.
 - Haar cascades are by their respective authors (the frontal-face cascade is by Rainer Lienhart, shipped with OpenCV).
 
