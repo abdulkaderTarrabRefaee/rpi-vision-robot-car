@@ -69,7 +69,7 @@ Parts of this project were adapted from tutorials and open-source code, as stude
 - `controller/ball_tracking.py` follows a public OpenCV colour-tracking tutorial.
 - Haar cascades are by their respective authors (the frontal-face cascade is by Rainer Lienhart, shipped with OpenCV).
 
-Everything else, including the motor and servo control, the command protocol, the Tkinter and pygame front ends and the integration, is my own work.
+The project was built and presented by a student team. I wrote all of the software: the motor and servo control, the command protocol, the Tkinter and pygame front ends, the vision modes and the integration.
 
 ## Author
 
